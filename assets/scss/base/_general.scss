@@ -1,0 +1,16 @@
+@use "../abstract/variable" as var;
+
+
+@font-face {
+    font-family: "roboto";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: "roboto";
+}
+
+a:hover {
+    color: #9698b9;
+    transition: all 300ms;
+}

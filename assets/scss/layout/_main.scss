@@ -1,0 +1,48 @@
+@use "../abstract/mixins";
+@use "../abstract/variable" as var;
+
+#help {
+    @include mixins.flex($direction : column);
+    background-color: #DADBF1;
+    padding: 4rem 10%;
+
+    h2 {
+        font-size: 48px;
+        font-weight:500;
+        margin-bottom: 1rem;
+    }
+    #input {
+        position: relative;
+
+        input {
+            height: 2rem;
+            width: 30rem;
+            padding: 0 1.8rem 0 1rem;
+        }
+        i {
+            position: absolute;
+            right: 0.5rem;
+            top: 0.6rem;
+        }
+    }
+}
+
+#fondblanc {
+    margin: 8rem 0;
+}
+
+@media screen and (max-width : 600px) {
+    #help {
+        h2{
+            font-size: 32px;
+        }
+        #input {
+            input {
+                width: 20rem;
+            }
+        }
+    }
+}
+#fondblanc {
+    margin: 4rem 0;
+}
